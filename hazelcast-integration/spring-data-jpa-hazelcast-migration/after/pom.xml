@@ -19,7 +19,6 @@
     </properties>
 
     <modules>
-        <module>after-kv-service</module>
         <module>after-hz-main</module>
         <module>after-main</module>
     </modules>

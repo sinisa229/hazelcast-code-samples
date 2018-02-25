@@ -21,7 +21,7 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>after-kv-service</artifactId>
+            <artifactId>after-main</artifactId>
             <version>${project.version}</version>
         </dependency>
 
