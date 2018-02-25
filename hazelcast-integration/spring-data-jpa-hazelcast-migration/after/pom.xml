@@ -15,15 +15,10 @@
     <description>&quot;After&quot;</description>
 
     <properties>
-        <!-- needed for checkstyle/findbugs -->
-        <main.basedir>${project.parent.parent.parent.basedir}</main.basedir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <modules>
-        <module>after-jpa-repository</module>
-        <module>after-jpa-service</module>
-        <module>after-kv-repository</module>
         <module>after-kv-service</module>
         <module>after-hz-main</module>
         <module>after-main</module>

@@ -1,4 +1,4 @@
-package com.hazelcast.samples.spring.data.migration;
+package com.hazelcast.samples.spring.data.migration.jpa;
 
 import com.hazelcast.samples.spring.data.migration.model.Noun;
 import org.springframework.data.jpa.repository.Query;

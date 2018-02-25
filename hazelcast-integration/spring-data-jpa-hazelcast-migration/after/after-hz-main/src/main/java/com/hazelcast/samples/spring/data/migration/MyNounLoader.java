@@ -12,6 +12,8 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.hazelcast.samples.spring.data.migration.jpa.NounJPARepository;
+
 /**
  * Connect a Hazelcast server to an RDBMS, so a Java {@code map} can be populated
  * on demand from a database table.
@@ -25,7 +27,7 @@ import java.util.Map;
 @Slf4j
 public class MyNounLoader implements ApplicationContextAware, MapLoader<Integer, Noun> {
 
-    private static NounJPARepository nounJPARepository;
+    private static com.hazelcast.samples.spring.data.migration.jpa.NounJPARepository nounJPARepository;
 
     /**
      * Load one record using its key.

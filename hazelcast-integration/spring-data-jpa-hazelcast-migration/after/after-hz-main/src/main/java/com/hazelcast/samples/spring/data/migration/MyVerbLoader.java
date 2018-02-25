@@ -1,6 +1,7 @@
 package com.hazelcast.samples.spring.data.migration;
 
 import com.hazelcast.core.MapLoader;
+import com.hazelcast.samples.spring.data.migration.jpa.VerbJPARepository;
 import com.hazelcast.samples.spring.data.migration.model.Verb;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;
@@ -25,7 +26,7 @@ import java.util.Map;
 @Slf4j
 public class MyVerbLoader implements ApplicationContextAware, MapLoader<Integer, Verb> {
 
-    private static VerbJPARepository verbJPARepository;
+    private static com.hazelcast.samples.spring.data.migration.jpa.VerbJPARepository verbJPARepository;
 
     /**
      * Load one record using its key.
