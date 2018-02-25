@@ -1,5 +1,7 @@
 package com.hazelcast.samples.spring.data.migration;
 
+import com.hazelcast.samples.spring.data.migration.model.Noun;
+import com.hazelcast.samples.spring.data.migration.model.Verb;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

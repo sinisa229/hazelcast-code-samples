@@ -1,5 +1,6 @@
 package com.hazelcast.samples.spring.data.migration;
 
+import com.hazelcast.samples.spring.data.migration.model.Noun;
 import org.springframework.data.hazelcast.repository.HazelcastRepository;
 
 /**

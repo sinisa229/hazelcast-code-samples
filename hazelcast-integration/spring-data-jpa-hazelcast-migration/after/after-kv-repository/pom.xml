@@ -23,7 +23,7 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>after-domain</artifactId>
+            <artifactId>after-jpa-repository</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

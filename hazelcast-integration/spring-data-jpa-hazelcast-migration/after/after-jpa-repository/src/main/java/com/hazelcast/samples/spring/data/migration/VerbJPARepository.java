@@ -1,5 +1,6 @@
 package com.hazelcast.samples.spring.data.migration;
 
+import com.hazelcast.samples.spring.data.migration.model.Verb;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 

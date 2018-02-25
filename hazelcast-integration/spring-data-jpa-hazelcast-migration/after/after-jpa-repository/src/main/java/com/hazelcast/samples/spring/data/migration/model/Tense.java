@@ -1,4 +1,4 @@
-package com.hazelcast.samples.spring.data.migration;
+package com.hazelcast.samples.spring.data.migration.model;
 
 /**
  * A java enumeration for the tense of a verb.

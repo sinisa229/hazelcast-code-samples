@@ -1,5 +1,6 @@
 package com.hazelcast.samples.spring.data.migration;
 
+import com.hazelcast.samples.spring.data.migration.model.Verb;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Test;

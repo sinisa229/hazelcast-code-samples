@@ -7,8 +7,7 @@
     <!-- Look for some of the cluster -->
     <network>
         <cluster-members>
-            <address>127.0.0.1:5701</address>
-            <address>127.0.0.1:5702</address>
+            <address>127.0.0.1</address>
         </cluster-members>
     </network>
 

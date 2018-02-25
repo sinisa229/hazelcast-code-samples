@@ -17,15 +17,21 @@
         </join>
     </network>
 
-    <map name="com.hazelcast.samples.spring.data.migration.Noun">
+    <map name="com.hazelcast.samples.spring.data.migration.model.Noun">
         <map-store enabled="true" initial-mode="EAGER">
             <class-name>com.hazelcast.samples.spring.data.migration.MyNounLoader</class-name>
         </map-store>
     </map>
 
-    <map name="com.hazelcast.samples.spring.data.migration.Verb">
+    <map name="com.hazelcast.samples.spring.data.migration.model.Verb">
         <map-store enabled="true" initial-mode="EAGER">
             <class-name>com.hazelcast.samples.spring.data.migration.MyVerbLoader</class-name>
+        </map-store>
+    </map>
+
+    <map name="com.hazelcast.samples.spring.data.migration.model.DailyAccumulatorEntity">
+        <map-store enabled="true" initial-mode="EAGER">
+            <class-name>com.hazelcast.samples.spring.data.migration.model.DailyAccumulatorEntity</class-name>
         </map-store>
     </map>
 

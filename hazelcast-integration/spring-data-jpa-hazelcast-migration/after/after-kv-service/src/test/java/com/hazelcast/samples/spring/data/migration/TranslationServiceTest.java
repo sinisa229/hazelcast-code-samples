@@ -2,6 +2,9 @@ package com.hazelcast.samples.spring.data.migration;
 
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.core.IMap;
+import com.hazelcast.samples.spring.data.migration.model.Noun;
+import com.hazelcast.samples.spring.data.migration.model.Tense;
+import com.hazelcast.samples.spring.data.migration.model.Verb;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Test;

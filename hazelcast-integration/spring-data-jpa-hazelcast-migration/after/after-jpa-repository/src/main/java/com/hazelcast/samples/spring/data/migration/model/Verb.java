@@ -1,4 +1,4 @@
-package com.hazelcast.samples.spring.data.migration;
+package com.hazelcast.samples.spring.data.migration.model;
 
 import lombok.Data;
 import org.springframework.data.keyvalue.annotation.KeySpace;

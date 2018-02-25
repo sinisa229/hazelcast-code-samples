@@ -1,5 +1,7 @@
 package com.hazelcast.samples.spring.data.migration;
 
+import com.hazelcast.samples.spring.data.migration.model.Tense;
+import com.hazelcast.samples.spring.data.migration.model.Verb;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
