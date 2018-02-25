@@ -29,7 +29,6 @@
     <modules>
         <module>shared</module>
         <module>database</module>
-        <module>before</module>
         <module>after</module>
     </modules>
 
