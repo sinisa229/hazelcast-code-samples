@@ -21,7 +21,6 @@
     </properties>
 
     <modules>
-        <module>after-domain</module>
         <module>after-jpa-repository</module>
         <module>after-jpa-service</module>
         <module>after-kv-repository</module>
