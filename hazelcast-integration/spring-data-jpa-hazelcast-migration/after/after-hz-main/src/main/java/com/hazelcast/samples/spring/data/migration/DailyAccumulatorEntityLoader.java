@@ -1,34 +1,45 @@
 package com.hazelcast.samples.spring.data.migration;
 
 import com.hazelcast.core.MapLoader;
+import com.hazelcast.samples.spring.data.migration.jpa.DailyAccumulatorEntityRepository;
 import com.hazelcast.samples.spring.data.migration.model.DailyAccumulatorEntity;
-import org.springframework.beans.BeansException;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.Map;
 
-public class DailyAccumulatorEntityLoader implements ApplicationContextAware, MapLoader<Long, DailyAccumulatorEntity> {
+@Component
+@Slf4j
+public class DailyAccumulatorEntityLoader implements MapLoader<Long, DailyAccumulatorEntity> {
 
-    @Override
-    public DailyAccumulatorEntity load(Long aLong) {
-        return null;
+    private DailyAccumulatorEntityRepository dailyAccumulatorEntityRepository;
+
+    public DailyAccumulatorEntityLoader(final DailyAccumulatorEntityRepository dailyAccumulatorEntityRepository) {
+        this.dailyAccumulatorEntityRepository = dailyAccumulatorEntityRepository;
     }
 
     @Override
-    public Map<Long, DailyAccumulatorEntity> loadAll(Collection<Long> collection) {
-        return null;
+    public DailyAccumulatorEntity load(Long id) {
+        return dailyAccumulatorEntityRepository.findOne(id);
+    }
+
+    @Override
+    public Map<Long, DailyAccumulatorEntity> loadAll(Collection<Long> keys) {
+        Map<Long, DailyAccumulatorEntity> result = new HashMap<>();
+        for (Long key : keys) {
+            DailyAccumulatorEntity noun = this.load(key);
+            if (noun != null) {
+                result.put(key, noun);
+            }
+        }
+        return result;
     }
 
     @Override
     public Iterable<Long> loadAllKeys() {
-        return null;
-    }
-
-    @Override
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-
+        return dailyAccumulatorEntityRepository.findAllId();
     }
 
 }
