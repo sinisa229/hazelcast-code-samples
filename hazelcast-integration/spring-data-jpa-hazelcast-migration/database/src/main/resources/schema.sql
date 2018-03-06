@@ -15,3 +15,11 @@ CREATE TABLE IF NOT EXISTS verb (
 	spanish                VARCHAR(20),
 	tense                  INTEGER
 );
+
+CREATE TABLE IF NOT EXISTS daily_accumulator_entity (
+	id                     INTEGER PRIMARY KEY,
+	bunny_id                VARCHAR(20),
+	item_type                 VARCHAR(20),
+	`value`                VARCHAR(20),
+	`date`                  INTEGER
+);

@@ -15,8 +15,6 @@
     <description>RDBMS database</description>
 
     <properties>
-        <!-- needed for checkstyle/findbugs -->
-        <main.basedir>${project.parent.parent.parent.basedir}</main.basedir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 

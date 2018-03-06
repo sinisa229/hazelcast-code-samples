@@ -13,3 +13,9 @@ INSERT INTO verb (id, english, french, spanish, tense)
 VALUES
 (1, 'drink', 'bois', 'bebe', 1)
 ;
+
+insert into daily_accumulator_entity (id, bunny_id, item_type, `value`, `date` )
+VALUES
+(1, 'bunny1', 'iemType1', 12, null),
+(2, 'bunny2', 'iemType2', 13, null)
+;

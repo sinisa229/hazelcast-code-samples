@@ -36,7 +36,7 @@ public class DebugCommands implements CommandMarker {
             return;
         }
 
-        for (String tableName : new String[]{"noun", "verb"}) {
+        for (String tableName : new String[]{"noun", "verb", "daily_accumulator_entity"}) {
             log.info("");
             try {
                 List<Map<String, Object>> resultSet = this.jdbcTemplate.queryForList("SELECT * FROM " + tableName);
